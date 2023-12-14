@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gicpc_eats_.ui.home.HomeFragment"
+        android:label="@string/rapi"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/comida_del_dia"
+        android:name="com.example.gicpc_eats_.ui.dealiymeal.DailyMealFragment"
+        android:label="@string/Restaurantes"
+        tools:layout="@layout/daily_meal_fragment" />
+
+    <fragment
+        android:id="@+id/favorito"
+        android:name="com.example.gicpc_eats_.ui.favourite.FavouriteFragment"
+        android:label="@string/favorito"
+        tools:layout="@layout/fragment_favourite"
+        android:textColor="@color/black"
+        />
+    <fragment
+        android:id="@+id/micarrito"
+        android:name="com.example.gicpc_eats_.ui.MicarritoFragment"
+        android:label="@string/carrito"
+        tools:layout="@layout/fragment_micarrito" />
+</navigation>
